@@ -1,0 +1,19 @@
+For the Dissertation 
+* I need to make the Demo 
+	*For the Demo I need 3 things :
+
+1. Identify the knowledge store which would be used in a RAG pipeline for Q&A.
+2. Devise Methodology to go about the Q&A.
+3. Looking at the Gap in performance of some local LLMs, training them on specific Dataset and then comparing their performance with new Metric.
+4. Use RAGAS and Promptfoo thoroughly to build demo 
+5. Demo to be run in Jupyter Notebook for final result 
+6. Have NLP based analytics running on the responses received from the LLM 
+7. Identify the Results, store and run analysis on them. 
+8. Based on the primary experiments created, record and do the experiments 
+
+
+
+
+Task Force and precedence now, 
+1. Choose metrics I want to use -> index them for literature review 
+2. store individual metrics associated with the query and the response. 

@@ -1,0 +1,30 @@
+	•	Semantic search:
+		•	Natural Language Understanding
+		•	Semantic embedding algorithms
+		•	Query-document relevance models
+	•	BERTscore:
+		•	BERT language model
+		•	Cosine similarity of contextual embeddings
+		•	Token-level comparison
+	•	ROUGE:
+		•	Overlap-based evaluation metric
+		•	Counting n-gram matches
+		•	Recall and precision calculations
+	•	TER:
+		•	Edit operations counting
+		•	Alignment-based error analysis
+		•	Translation error rate computation
+
+
+Today, I will take you through a compelling exploration of the question-answering abilities of Large Language Models (LLMs), especially in the context of new information.
+	•	Introduction to LLMs: The advent of LLMs has revolutionized how we interact with technology. With vast knowledge across multiple domains, they are the new frontiers in AI.
+	•	Importance of Benchmarking: As LLMs grow, so does the need to benchmark them. MMLU is a popular benchmark that measures knowledge across 57 diverse subjects.
+	•	Experiment Goals: Our main goal is to assess LLMs' ability to answer questions with and without relevant context and to explore beyond traditional NLP metrics for a more nuanced understanding.
+	•	Experiment 1 Overview: We began by prompting LLMs to describe the Battle of Boyne in less than 100 words. We then compared their responses to a reference text using metrics like BLEU, ROUGE, and TER. Unfortunately, the performance was not up to the mark, with low BLEU scores and high TER.
+	•	Observations from Experiment 1: Despite the low performance on traditional metrics, the cosine similarity was relatively high, indicating a semantic alignment with the reference.
+	•	Introduction to RAG: Next, we introduced the Retrieval-Augmented Generation (RAG) technique to provide context for the models using movies released after my knowledge cutoff, like 'Barbie' and 'Oppenheimer'.
+	•	Experiment 2 Methodology: We assessed the models using BERTScore and semantic search. By forming questions about the movies and categorizing them based on knowledge or prose, we tested the LLMs' responses before and after providing RAG context.
+	•	Findings from Experiment 2: We noticed an interesting pattern. While performance varied based on question type, there was a relative improvement in scores for fact-based questions after introducing RAG. Particularly for 'Barbie', a fictional movie, the improvement was more pronounced than for 'Oppenheimer'.
+	•	Semantic Similarity Insights: In both cases, providing RAG context improved semantic similarity, but the effect was more significant for the fictional content. This suggests that LLMs can adapt and improve their responses even for material not included in their initial training.
+	•	Concluding Thoughts: Traditional NLP metrics may not fully capture the capabilities of LLMs. Alternative assessments like BERTScore and semantic similarity offer a more detailed evaluation. We see a marked improvement in the LLMs' Q&A abilities with RAG, especially for fictional material.
+In conclusion, as we continue to push the boundaries of what LLMs can do, it becomes clear that we must also evolve our methods of evaluation. The way forward is to use metrics that truly reflect the nuanced understanding that LLMs bring to the table.
